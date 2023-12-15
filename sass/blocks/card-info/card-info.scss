@@ -1,0 +1,23 @@
+.card-info {
+    @include main-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fcdfa2a1;
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 10px;
+    border: none;
+    text-align: justify;    
+    margin-top: 10px; 
+    &__image{
+        width: 100px;
+    }  
+
+}
+
+// .info-group__card-info:not(:last-child){
+//     margin-right: $base-space;
+//     margin-bottom: $base-space;
+// }

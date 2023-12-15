@@ -1,0 +1,46 @@
+.banner{    
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;   
+    
+    @media screen and (max-width:635px){
+        justify-content: center;
+        flex-wrap: wrap-reverse;               
+    }
+    
+    &__text{
+        @include main-text;
+        display: flex;
+        flex-direction: column;
+        margin-right: $base-space;        
+    }
+    &__title{
+        margin-bottom: $base-space;
+        text-align: justify;
+        @media screen and (max-width:635px){
+            text-align: center;              
+        }   
+           
+              
+    }
+    &__info{
+       text-align: justify;
+       width: 85%;
+       @media screen and (max-width:635px){
+        width: 100%;               
+    }      
+    }    
+    
+}
+.page-content__banner{
+    margin-top: $base-space;
+    margin-bottom: $base-space;       
+}
+.banner__image{  
+    max-width: 50%;
+    
+    @media screen and (max-width:635px){
+        display: none;               
+    }    
+
+}

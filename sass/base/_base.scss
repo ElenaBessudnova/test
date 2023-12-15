@@ -1,0 +1,15 @@
+
+@mixin main-text{
+    font-family: $ff-base; ;  
+    font-weight: 400;
+    font-size: $fs-base;
+    color: rgb(33, 33, 33);
+}
+@mixin large-text{
+    font-family: $ff-base; ;  
+    font-weight: 700;
+    font-size: $fs-max;
+    color: rgb(33, 33, 33);
+}
+
+

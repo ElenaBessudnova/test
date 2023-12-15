@@ -1,0 +1,64 @@
+.page-header {
+    @include large-text;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__logo {
+        padding-top: $base-space;
+        padding-bottom: $base-space;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        margin-right: $base-space;
+    }
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 1em;
+    }
+
+    &__link {
+
+        text-decoration: none;
+        color: inherit;
+        font-size: $fs-base;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    &__link_active {
+        color: $active-color;
+        font-weight: $fw-bold;
+    }
+
+    &__button {
+        margin-top: 20px;
+        margin-bottom: $base-space;
+    }
+}
+
+@media (max-width:635px) {
+    .page-header__navigation {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:635px) {
+    .page-header__text{
+        font-size: 3vw;
+    }   
+    
+}

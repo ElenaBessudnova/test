@@ -1,0 +1,10 @@
+.input-base{
+    @include main-text;
+    height: 5vh;       
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
